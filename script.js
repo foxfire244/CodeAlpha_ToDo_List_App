@@ -1,4 +1,3 @@
-
 function addTask() {
   const input = document.getElementById("todo-input");
   const taskText = input.value.trim();
