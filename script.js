@@ -15,12 +15,11 @@ function addTask() {
   completeBtn.onclick = () => {
     li.classList.toggle("done");
 
-    // Show or remove "مكتمل ✅"
     if (li.classList.contains("done")) {
       if (!li.querySelector(".status")) {
         const status = document.createElement("span");
         status.className = "status";
-        status.textContent = "مكتمل ✅";
+        status.textContent = "Completed ✅";
         status.style.marginLeft = "10px";
         li.appendChild(status);
       }
